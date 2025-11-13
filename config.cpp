@@ -1,13 +1,20 @@
 class CfgPatches {
     class FernandimTeste {
-        units[] = {}; // Add "barraco_02" to the list of units
+        units[] = {"prop", "barraco_02", "barraco_03", "barraco_3", "barraco_04", "barraco_4", "barraco_05", "barraco_5", "barraco_06", "barraco_6", "barraco_11", "barraco_12", "barraco_13", "barraco_14", "barraco_15", "barraco_17", "barraco_18", "barraco_19", "barraco_20", "barraco_21", "barraco_22", "upp", "casa_1", "casa_2", "casa_3", "casa_4", "casa_5", "casa_6", "casa_7", "casa1", "antenacda", "prediocda", "GN_barraco01", "GN_barraco02", "escada1", "escada2", "escada3", "escada4", "escada5", "escada6", "escada7", "caixadagua", "telhado", "orelhao", "ar15", "maconha", "calcada", "curva", "morro", "rampa", "ruareta", "lombada", "grafite01", "grafite02", "grafite03", "grafite04", "grafite05", "grafite07", "grafite08", "grafite09", "grafite10", "grafite11", "grafite12", "grafite13", "grafite14", "grafite15", "grafite16", "grafite17", "grafite18",  "grafite19",  "grafite20",  "grafite21",  "grafite22",  "grafite23",  "grafite24",  "grafite25",  "grafite26",  "grafite27"};
         weapons[] = {};
         requiredAddons[] = {};
         fileName = "addons\favela_props.pbo";
     };
+/*
+    class Traficantes_Mod
+    {
+        units[] = {"Traficante_1_Unit", "Traficante_2_Unit"};
+        weapons[] = {"Traficante_1_Uniform", "Traficante_2_Uniform"};
+        requiredVersion = 0.1;
+        requiredAddons[] = {"A3_Characters_F_Civil"};
+    };
+*/
 };
-
-
 
 
 class CfgVehicleClasses {
@@ -19,6 +26,52 @@ class CfgVehicleClasses {
         displayName = "Barracos"; // Rename to what you want the sub-group of the faction will be.
     };
 };
+
+/*
+class CfgWeapons
+{
+    class ItemCore;
+    class UniformItem;
+    class Uniform_Base : ItemCore
+    {
+        class ItemInfo;
+    };
+
+    class Traficante_1_Uniform : Uniform_Base
+    {
+        scope = 2;
+        author = "Fernandim";
+        displayName = "Traficante 1 Uniforme";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Traficante_1_Unit";
+            containerClass = "Supply20";
+            mass = 50;
+        };
+    };
+
+    class Traficante_2_Uniform : Uniform_Base
+    {
+        scope = 2;
+        author = "Fernandim";
+        displayName = "Traficante 2 Uniforme";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Traficante_2_Unit";
+            containerClass = "Supply20";
+            mass = 50;
+        };
+    };
+};
+
+*/
+
 
 class CfgEditorCategories
 {
@@ -55,6 +108,7 @@ class CfgVehicles {
 
     class prop: House_F {
         scope = 2; // 2 means it's available in the editor
+        scopeCurator = 2;
         displayName = "barraco_01";
         model = "favela_props\models\barraco_01.p3d"; // Path to your model
         //hiddenSelections[] = {"prop"}; // Replace with your texture selection name
@@ -235,6 +289,7 @@ class casa_1: prop {
     displayName = "GN_barraco02";
     model = "favela_props\models\GN_barraco02.p3d"; 
     };
+
 
 //GN Modelagens Convertidas termino
     class escada1: prop { 
@@ -492,4 +547,412 @@ class casa_1: prop {
     editorSubcategory = "GrafitesFavelas";
     };
 
+
+
+    // CPX Conversão
+    class cpx_casa_01: prop { 
+        displayName = "cpx_casa_01";
+        model = "favela_props\models\cpx\cpx_casa_01.p3d"; 
+        };
+    
+        class cpx_casa_01_a: prop { 
+        displayName = "cpx_casa_01_a";
+        model = "favela_props\models\cpx\cpx_casa_01_a.p3d"; 
+        };
+    
+        class cpx_casa_01_b: prop { 
+        displayName = "cpx_casa_01_b";
+        model = "favela_props\models\cpx\cpx_casa_01_b.p3d"; 
+        };
+    
+        class cpx_casa_01_c: prop { 
+        displayName = "cpx_casa_01_c";
+        model = "favela_props\models\cpx\cpx_casa_01_c.p3d"; 
+        };
+    
+        class cpx_casa_01_d: prop { 
+        displayName = "cpx_casa_01_d";
+        model = "favela_props\models\cpx\cpx_casa_01_d.p3d"; 
+        };
+    
+        class cpx_casa_01_e: prop { 
+        displayName = "cpx_casa_01_e";
+        model = "favela_props\models\cpx\cpx_casa_01_e.p3d"; 
+        };
+    
+        class cpx_casa_06: prop { 
+        displayName = "cpx_casa_06";
+        model = "favela_props\models\cpx\cpx_casa_06.p3d"; 
+        };
+    
+        class cpx_casa_06_a: prop { 
+        displayName = "cpx_casa_06_a";
+        model = "favela_props\models\cpx\cpx_casa_06_a.p3d"; 
+        };
+    
+        class cpx_casa_06_b: prop { 
+        displayName = "cpx_casa_06_b";
+        model = "favela_props\models\cpx\cpx_casa_06_b.p3d"; 
+        };
+    
+        class cpx_casa_06_c: prop { 
+        displayName = "cpx_casa_06_c";
+        model = "favela_props\models\cpx\cpx_casa_06_c.p3d"; 
+        };
+    
+        class cpx_casa_06_d: prop { 
+        displayName = "cpx_casa_06_d";
+        model = "favela_props\models\cpx\cpx_casa_06_d.p3d"; 
+        };
+    
+        class cpx_casa_06_e: prop { 
+        displayName = "cpx_casa_06_e";
+        model = "favela_props\models\cpx\cpx_casa_06_e.p3d"; 
+        };
+    
+        class cpx_casa_08: prop { 
+        displayName = "cpx_casa_08";
+        model = "favela_props\models\cpx\cpx_casa_08.p3d"; 
+        };
+    
+        class cpx_casa_12_box: prop { 
+        displayName = "cpx_casa_12_box";
+        model = "favela_props\models\cpx\cpx_casa_12_box.p3d"; 
+        };
+    
+        class cpx_casa_14: prop { 
+        displayName = "cpx_casa_14";
+        model = "favela_props\models\cpx\cpx_casa_14.p3d"; 
+        };
+    
+        class cpx_casa_15: prop { 
+        displayName = "cpx_casa_15";
+        model = "favela_props\models\cpx\cpx_casa_15.p3d"; 
+        };
+    
+        class cpx_casa_15_a: prop { 
+        displayName = "cpx_casa_15_a";
+        model = "favela_props\models\cpx\cpx_casa_15_a.p3d"; 
+        };
+    
+        class cpx_casa_15_b: prop { 
+        displayName = "cpx_casa_15_b";
+        model = "favela_props\models\cpx\cpx_casa_15_b.p3d"; 
+        };
+    
+        class cpx_casa_15_c: prop { 
+        displayName = "cpx_casa_15_c";
+        model = "favela_props\models\cpx\cpx_casa_15_c.p3d"; 
+        };
+    
+        class cpx_casa_15_d: prop { 
+        displayName = "cpx_casa_15_d";
+        model = "favela_props\models\cpx\cpx_casa_15_d.p3d"; 
+        };
+    
+        class cpx_casa_15_e: prop { 
+        displayName = "cpx_casa_15_e";
+        model = "favela_props\models\cpx\cpx_casa_15_e.p3d"; 
+        };
+    
+        class cpx_casa_15_f: prop { 
+        displayName = "cpx_casa_15_f";
+        model = "favela_props\models\cpx\cpx_casa_15_f.p3d"; 
+        };
+    
+        class cpx_casa_15_g: prop { 
+        displayName = "cpx_casa_15_g";
+        model = "favela_props\models\cpx\cpx_casa_15_g.p3d"; 
+        };
+    
+        class cpx_casa_17: prop { 
+        displayName = "cpx_casa_17";
+        model = "favela_props\models\cpx\cpx_casa_17.p3d"; 
+        };
+    
+        class cpx_casa_17_a: prop { 
+        displayName = "cpx_casa_17_a";
+        model = "favela_props\models\cpx\cpx_casa_17_a.p3d"; 
+        };
+    
+        class cpx_casa_17_b: prop { 
+        displayName = "cpx_casa_17_b";
+        model = "favela_props\models\cpx\cpx_casa_17_b.p3d"; 
+        };
+    
+        class cpx_casa_17_c: prop { 
+        displayName = "cpx_casa_17_c";
+        model = "favela_props\models\cpx\cpx_casa_17_c.p3d"; 
+        };
+    
+        class cpx_casa_17_d: prop { 
+        displayName = "cpx_casa_17_d";
+        model = "favela_props\models\cpx\cpx_casa_17_d.p3d"; 
+        };
+    
+        class cpx_casa_17_e: prop { 
+        displayName = "cpx_casa_17_e";
+        model = "favela_props\models\cpx\cpx_casa_17_e.p3d"; 
+        };
+    
+        class cpx_casa_17_f: prop { 
+        displayName = "cpx_casa_17_f";
+        model = "favela_props\models\cpx\cpx_casa_17_f.p3d"; 
+        };
+    
+        class cpx_casa_17_g: prop { 
+        displayName = "cpx_casa_17_g";
+        model = "favela_props\models\cpx\cpx_casa_17_g.p3d"; 
+        };
+    
+        class cpx_casa_17_h: prop { 
+        displayName = "cpx_casa_17_h";
+        model = "favela_props\models\cpx\cpx_casa_17_h.p3d"; 
+        };
+    
+        class cpx_casa_20: prop { 
+        displayName = "cpx_casa_20";
+        model = "favela_props\models\cpx\cpx_casa_20.p3d"; 
+        };
+    
+        class cpx_casa_20_a: prop { 
+        displayName = "cpx_casa_20_a";
+        model = "favela_props\models\cpx\cpx_casa_20_a.p3d"; 
+        };
+    
+        class cpx_casa_20_b: prop { 
+        displayName = "cpx_casa_20_b";
+        model = "favela_props\models\cpx\cpx_casa_20_b.p3d"; 
+        };
+    
+        class cpx_casa_20_c: prop { 
+        displayName = "cpx_casa_20_c";
+        model = "favela_props\models\cpx\cpx_casa_20_c.p3d"; 
+        };
+    
+        class cpx_casa_20_d: prop { 
+        displayName = "cpx_casa_20_d";
+        model = "favela_props\models\cpx\cpx_casa_20_d.p3d"; 
+        };
+    
+        class cpx_casa_21: prop { 
+        displayName = "cpx_casa_21";
+        model = "favela_props\models\cpx\cpx_casa_21.p3d"; 
+        };
+    
+        class cpx_casa_21_a: prop { 
+        displayName = "cpx_casa_21_a";
+        model = "favela_props\models\cpx\cpx_casa_21_a.p3d"; 
+        };
+    
+        class cpx_casa_21_b: prop { 
+        displayName = "cpx_casa_21_b";
+        model = "favela_props\models\cpx\cpx_casa_21_b.p3d"; 
+        };
+    
+        class cpx_casa_21_c: prop { 
+        displayName = "cpx_casa_21_c";
+        model = "favela_props\models\cpx\cpx_casa_21_c.p3d"; 
+        };
+    
+        class cpx_casa_21_d: prop { 
+        displayName = "cpx_casa_21_d";
+        model = "favela_props\models\cpx\cpx_casa_21_d.p3d"; 
+        };
+    
+        class cpx_casa_24: prop { 
+        displayName = "cpx_casa_24";
+        model = "favela_props\models\cpx\cpx_casa_24.p3d"; 
+        };
+    
+        class cpx_casa_24_a: prop { 
+        displayName = "cpx_casa_24_a";
+        model = "favela_props\models\cpx\cpx_casa_24_a.p3d"; 
+        };
+    
+        class cpx_casa_24_b: prop { 
+        displayName = "cpx_casa_24_b";
+        model = "favela_props\models\cpx\cpx_casa_24_b.p3d"; 
+        };
+    
+        class cpx_casa_24_c: prop { 
+        displayName = "cpx_casa_24_c";
+        model = "favela_props\models\cpx\cpx_casa_24_c.p3d"; 
+        };
+    
+        class cpx_casa_24_d: prop { 
+        displayName = "cpx_casa_24_d";
+        model = "favela_props\models\cpx\cpx_casa_24_d.p3d"; 
+        };
+    
+        class cpx_casa_24_e: prop { 
+        displayName = "cpx_casa_24_e";
+        model = "favela_props\models\cpx\cpx_casa_24_e.p3d"; 
+        };
+    
+        class cpx_casa_24_f: prop { 
+        displayName = "cpx_casa_24_f";
+        model = "favela_props\models\cpx\cpx_casa_24_f.p3d"; 
+        };
+    
+        class cpx_casa_24_g: prop { 
+        displayName = "cpx_casa_24_g";
+        model = "favela_props\models\cpx\cpx_casa_24_g.p3d"; 
+        };
+    
+        class cpx_casa_24_h: prop { 
+        displayName = "cpx_casa_24_h";
+        model = "favela_props\models\cpx\cpx_casa_24_h.p3d"; 
+        };
+    
+        class cpx_casa_24_i: prop { 
+        displayName = "cpx_casa_24_i";
+        model = "favela_props\models\cpx\cpx_casa_24_i.p3d"; 
+        };
+    
+        class cpx_casa_24_j: prop { 
+        displayName = "cpx_casa_24_j";
+        model = "favela_props\models\cpx\cpx_casa_24_j.p3d"; 
+        };
+    
+        class cpx_casa_26: prop { 
+        displayName = "cpx_casa_26";
+        model = "favela_props\models\cpx\cpx_casa_26.p3d"; 
+        };
+    
+        class cpx_casa_29: prop { 
+        displayName = "cpx_casa_29";
+        model = "favela_props\models\cpx\cpx_casa_29.p3d"; 
+        };
+    
+        class cpx_casa_39: prop { 
+        displayName = "cpx_casa_39";
+        model = "favela_props\models\cpx\cpx_casa_39.p3d"; 
+        };
+    
+        class cpx_casa_39_a: prop { 
+        displayName = "cpx_casa_39_a";
+        model = "favela_props\models\cpx\cpx_casa_39_a.p3d"; 
+        };
+    
+        class cpx_casa_39_b: prop { 
+        displayName = "cpx_casa_39_b";
+        model = "favela_props\models\cpx\cpx_casa_39_b.p3d"; 
+        };
+    
+        class cpx_casa_39_c: prop { 
+        displayName = "cpx_casa_39_c";
+        model = "favela_props\models\cpx\cpx_casa_39_c.p3d"; 
+        };
+    
+        class cpx_casa_39_d: prop { 
+        displayName = "cpx_casa_39_d";
+        model = "favela_props\models\cpx\cpx_casa_39_d.p3d"; 
+        };
+    
+        class cpx_casa_39_e: prop { 
+        displayName = "cpx_casa_39_e";
+        model = "favela_props\models\cpx\cpx_casa_39_e.p3d"; 
+        };
+    
+        class cpx_casa_39_f: prop { 
+        displayName = "cpx_casa_39_f";
+        model = "favela_props\models\cpx\cpx_casa_39_f.p3d"; 
+        };
+    
+        class cpx_casa_39_g: prop { 
+        displayName = "cpx_casa_39_g";
+        model = "favela_props\models\cpx\cpx_casa_39_g.p3d"; 
+        };
+    
+        class cpx_casa_41: prop { 
+        displayName = "cpx_casa_41";
+        model = "favela_props\models\cpx\cpx_casa_41.p3d"; 
+        };
+    
+        class cpx_casa_41_a: prop { 
+        displayName = "cpx_casa_41_a";
+        model = "favela_props\models\cpx\cpx_casa_41_a.p3d"; 
+        };
+    
+        class cpx_casa_41_b: prop { 
+        displayName = "cpx_casa_41_b";
+        model = "favela_props\models\cpx\cpx_casa_41_b.p3d"; 
+        };
+    
+        class cpx_casa_41_c: prop { 
+        displayName = "cpx_casa_41_c";
+        model = "favela_props\models\cpx\cpx_casa_41_c.p3d"; 
+        };
+    
+        class cpx_casa_41_d: prop { 
+        displayName = "cpx_casa_41_d";
+        model = "favela_props\models\cpx\cpx_casa_41_d.p3d"; 
+        };
+    
+        class cpx_casa_41_e: prop { 
+        displayName = "cpx_casa_41_e";
+        model = "favela_props\models\cpx\cpx_casa_41_e.p3d"; 
+        };
+    
+        class CPX_Girder_01: prop { 
+        displayName = "CPX_Girder_01";
+        model = "favela_props\models\cpx\CPX_Girder_01.p3d"; 
+        };
+    
+        class CPX_Girder_02: prop { 
+        displayName = "CPX_Girder_02";
+        model = "favela_props\models\cpx\CPX_Girder_02.p3d"; 
+        };
+    
+    
+
+
+
+
+
+
+
+
+
+/*
+
+        // Uniforms
+
+    class C_man_1;
+
+    class Traficante_1_Unit : C_man_1
+    {
+        author = "Fernandim";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Traficante 1";
+        identityTypes[] = {"Head_CIV", "G_CIV_default"};
+        genericNames = "CivMen";
+        model = "a3\characters_f\civil\c_poor.p3d";
+        uniformClass = "Traficante_1_Uniform";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"favela_props\textures\uniforms\traficante\shirt_pants_0.paa"};
+        linkedItems[] = {};
+        respawnLinkedItems[] = {};
+        nakedUniform = "U_BasicBody";
+    };
+
+    class Traficante_2_Unit : C_man_1
+    {
+        author = "Fernandim";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Traficante 2";
+        identityTypes[] = {"Head_CIV", "G_CIV_default"};
+        genericNames = "CivMen";
+        model = "a3\characters_f\civil\c_poloshirt.p3d";
+        uniformClass = "Traficante_2_Uniform";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"favela_props\textures\uniforms\traficante\shirt_shorts_0.paa"};
+        linkedItems[] = {};
+        respawnLinkedItems[] = {};
+        nakedUniform = "U_BasicBody";
+    };
+    */
 };
